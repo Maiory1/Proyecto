@@ -49,14 +49,10 @@ public class CineElorrieta_Bienvenida extends JFrame {
 	 */
 	public CineElorrieta_Bienvenida() {
 		
-		
-		
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 1530, 880);
 		panel_Bienvenida = new JPanel();
 		panel_Bienvenida.addMouseListener(new MouseAdapter() {
-			
-		
 
 		/**
 		 * clicking takes you to the registration panel	
@@ -64,6 +60,12 @@ public class CineElorrieta_Bienvenida extends JFrame {
 			@Override
 			public void mouseClicked(MouseEvent e) {
 				retardo();
+				CineElorrieta_Registro registro = new CineElorrieta_Registro();
+				registro.setSize(1530, 880);
+				registro.setLocation(100,100);
+				registro.setVisible(true);
+				
+				panel_Bienvenida.setVisible(false);
 				
 			}
 		});
