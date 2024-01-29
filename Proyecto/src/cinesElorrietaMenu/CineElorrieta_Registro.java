@@ -33,7 +33,7 @@ public class CineElorrieta_Registro extends JFrame {
 			public void run() {
 				try {
 					CineElorrieta_Registro frame = new CineElorrieta_Registro();
-					frame.setVisible(true);
+					frame.setVisible(false);
 				} catch (Exception e) {
 					e.printStackTrace();
 				}

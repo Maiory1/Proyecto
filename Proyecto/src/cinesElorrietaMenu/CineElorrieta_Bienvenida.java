@@ -17,7 +17,7 @@ public class CineElorrieta_Bienvenida extends JFrame {
 
 	private static final long serialVersionUID = 1L;
 	private JPanel panel_Bienvenida;
-
+	
 	/**
 	 * Launch the application.
 	 */
@@ -42,22 +42,28 @@ public class CineElorrieta_Bienvenida extends JFrame {
 		}
 	}
 	
+	
+	
 	/**
 	 * Create the frame.
 	 */
 	public CineElorrieta_Bienvenida() {
+		
+		
+		
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 1530, 880);
 		panel_Bienvenida = new JPanel();
 		panel_Bienvenida.addMouseListener(new MouseAdapter() {
 			
+		
+
 		/**
 		 * clicking takes you to the registration panel	
 		 */
 			@Override
 			public void mouseClicked(MouseEvent e) {
 				retardo();
-				
 				
 			}
 		});
